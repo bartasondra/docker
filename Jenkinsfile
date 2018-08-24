@@ -15,7 +15,7 @@ pipeline {
 			steps {
 				sh "docker login --username bartasondra --password bartasondra"
 				sh "docker build -t bartasondra/new-app:0.1 ."
-				sh "docker pull bartasondra/new-app:0.1"
+				sh "docker push bartasondra/new-app:0.1"
 			}
 		}
 	}
